@@ -17,7 +17,7 @@ public class automation {
 
         DesiredCapabilities dc = new DesiredCapabilities();
 
-        dc.setCapability(MobileCapabilityType.DEVICE_NAME, "DEVICE_NAME");
+        dc.setCapability(MobileCapabilityType.DEVICE_NAME, "DEVICE_NAME(CHANGED_IT)");
         dc.setCapability("platformName", "android");
         dc.setCapability("appPackage", "com.sec.android.app.popupcalculator");
         dc.setCapability("appActivity", ".Calculator");
