@@ -1,0 +1,6 @@
+com/example/calculator_testing/BuildConfig.java
+ com.example.calculator_testing.BuildConfig
+com/example/calculator_testing/MainActivity.java
+ com.example.calculator_testing.MainActivity
+com/example/calculator_testing/automation.java
+ com.example.calculator_testing.automation

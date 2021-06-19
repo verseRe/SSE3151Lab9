@@ -1,0 +1,4 @@
+com/example/calculator_testing/ExampleInstrumentedTest.java
+ com.example.calculator_testing.ExampleInstrumentedTest
+com/example/calculator_testing/test/BuildConfig.java
+ com.example.calculator_testing.test.BuildConfig
