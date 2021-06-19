@@ -1,0 +1,3 @@
+Dear Dr. Ng,
+
+	I had to use my real phone instead of an emulator which is why I recorded two screencast. The first is running the code on Android Studio and the second is screen recording on my smartphone. The reason is that my emulator doesn't have calculator and it's very slow to even download a new calculator or download a new emulator. However, the two screencast are recorded at the same time which means they're sync together.
