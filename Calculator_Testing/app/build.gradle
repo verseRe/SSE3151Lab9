@@ -1,0 +1,72 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.3"
+
+    defaultConfig {
+        applicationId "com.example.calculator_testing"
+        minSdkVersion 19
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    packagingOptions {
+        exclude 'lang-708-input.txt'
+        exclude 'java.policy'
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/ASL2.0'
+        exclude("META-INF/*.kotlin_module")
+    }
+
+    repositories {
+        maven { url 'https://repo1.maven.org/maven2/' }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.google.android.material:material:1.3.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation files('src\\main\\java\\lib\\commons-lang3-3.12.0.jar')
+    implementation files('src\\main\\java\\lib\\commons-lang3-3.12.0-javadoc.jar')
+    implementation files('src\\main\\java\\lib\\commons-lang3-3.12.0-sources.jar')
+    implementation files('src\\main\\java\\lib\\commons-lang3-3.12.0-test-sources.jar')
+    implementation files('src\\main\\java\\lib\\commons-lang3-3.12.0-tests.jar')
+    implementation files('src\\main\\java\\lib\\java-client-7.0.0.jar')
+    implementation files('src\\main\\java\\lib\\byte-buddy-1.8.15.jar')
+    implementation files('src\\main\\java\\lib\\okhttp-3.11.0.jar')
+    implementation files('src\\main\\java\\lib\\okio-1.14.0.jar')
+    implementation files('src\\main\\java\\lib\\guava-25.0-jre.jar')
+    implementation files('src\\main\\java\\lib\\commons-exec-1.3.jar')
+    compileOnly ('org.seleniumhq.selenium:selenium-java:3.141.59')
+    implementation files('src\\main\\java\\lib\\hamcrest-core-1.3.jar')
+    implementation files('src\\main\\java\\lib\\junit-4.12.jar')
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+}
